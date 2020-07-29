@@ -11,7 +11,6 @@ class Song
   
   def artist=(newartist)
     @artist = newartist
-    puts "song artist add"
     @artist.add_song(self)
   end
   
@@ -26,11 +25,6 @@ class Song
       self.artist.name
     end
   end
-  
-  
-  # hello = Song.new("Hello")
-  #       hello.artist = adele
-  #       expect(adele.songs).to eq([hello])
   
   
 end     #ends class
